@@ -8,21 +8,21 @@ public class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int empId;
+    private Integer empId;
     private String empName;
     private double empSal;
 
-    public Employee(int empId, String empName, double empSal) {
+    public Employee(Integer empId, String empName, double empSal) {
         this.empId = empId;
         this.empName = empName;
         this.empSal = empSal;
     }
 
-    public int getEmpId() {
+    public Integer getEmpId() {
         return empId;
     }
 
-    public void setEmpId(int empId) {
+    public void setEmpId(Integer empId) {
         this.empId = empId;
     }
 
